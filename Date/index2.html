@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Days Calculating</title>
+</head>
+<body>
+    <h2 class="head">Calculating the difference between the dates</h2>
+    <form id="mainform" method="GET" action="#" class="main-form">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="Date1">Date1 </label>
+                    <input type="date" name="Date1" id="Date1" class="form-control" required>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="Date2">Date2 </label>
+                    <input type="date" name="Date2" id="Date2" class="form-control" required>
+                </div>
+            </div>
+
+    </form>
+
+    <div class="container-1">
+        <div class="flex-box-container-1">
+            <div>
+            <button type="button" class="btn btn-primary btn-lg"  onclick="x.diff()">Submit</button>
+            </div>
+            <div>
+            <button type="button" class="btn btn-primary btn-lg"  onclick="x.reset()">Reset</button>
+            </div>
+        </div>
+        <h4><u>Differnce between the dates is</u>:</h4>
+        <div class="flex-box-container-2">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
